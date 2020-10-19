@@ -130,7 +130,6 @@ public class Test4Fun {
            3.there is other thing,we should verify: whether some kind method is called when some condition are met. such as send email to end user.
            4.
 
-
            Test the common case of everything you can.
 
            Test the edge cases of a few unusually complex code that you think will probably have errors.
