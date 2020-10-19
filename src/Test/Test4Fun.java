@@ -143,7 +143,9 @@ public class Test4Fun {
 
            It forces you to plan before you code
 
+           user story -> user case -> write abstract test method/description(not implement it, just design test case ,function,method-> make sure it is clean,simple,single responsibility,)
 
+           -> try to write testable code -> work-> test pass -> code refactor -> review and check it by self -> code review -> throw it to qa -> no bug ->  Done.
 
 
        */
