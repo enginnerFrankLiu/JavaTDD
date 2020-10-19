@@ -1,13 +1,9 @@
 package Test;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import org.mockito.Spy;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
@@ -147,6 +143,8 @@ public class Test4Fun {
 
            -> try to write testable code -> work-> test pass -> code refactor -> review and check it by self -> code review -> throw it to qa -> no bug ->  Done.
 
+
+            test ssh
 
        */
 
