@@ -2,8 +2,6 @@ package Main;
 
 
 import Main.Service.TestInfo;
-import org.junit.Test;
-
 /**
  * 用户故事分析
  * as a normal person,i want to buy a car
@@ -52,11 +50,16 @@ public class Main {
         TestInfo t =new TestInfo();
         t.InfoN();
     }
+    static void partitionByInfo(){
+        TestInfo t =new TestInfo();
+        t.partitionByInfo();
+    }
 
     public static void main(String [] args){
 
+        //partitionByInfo();
         //InfoN();
-        InfoM();
+        //InfoM();
        //TestD();
        //testA();
        //TestB();

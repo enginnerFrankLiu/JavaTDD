@@ -1,16 +1,10 @@
 package Main.Service;
-
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ResultTreeType;
-
-import javax.print.DocFlavor;
-import java.lang.reflect.MalformedParameterizedTypeException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.logging.ConsoleHandler;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * 1.function map
@@ -142,6 +136,22 @@ public class TestInfo {
             System.out.println(index);
             System.out.println(sets);
         });
+
+    }
+
+    public void partitionByInfo(){
+
+        Stream<Integer> stream= Stream.of(1,2,3,4,5,6,7,8);
+
+        Map<Boolean,List<Integer>> map= stream.collect(
+          Collectors.partitioningBy(num->num>3)
+        );
+
+        //split it into two part
+        // one part meet requirments -true
+        //other part not, false.
+
+        System.out.println(map);
 
     }
 
