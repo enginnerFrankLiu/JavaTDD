@@ -156,19 +156,19 @@ public class TestInfo {
 
         List<Integer> list= Arrays.asList(1,2,3,4,5,6);
 
-        Integer max=list
-                .stream()
-                .collect(Collectors.maxBy(Integer::max))
-                .orElse(0);
+//        Integer max=list
+//                .stream()
+//                .collect(Collectors.maxBy(Integer::max))
+//                .orElse(0);
+//
+//        System.out.println("max value of list->"+max);
+//
+//        Integer min=list
+//                .stream()
+//                .collect(Collectors.minBy(Integer::min))
+//                .orElse(0);
 
-        System.out.println("max value of list->"+max);
-
-        Integer min=list
-                .stream()
-                .collect(Collectors.minBy(Integer::min))
-                .orElse(0);
-
-        System.out.println("min value of list ->"+min);
+//        System.out.println("min value of list ->"+min);
 
 //
 //        Integer dw=list
@@ -184,6 +184,12 @@ public class TestInfo {
 //                .orElse(0);
 //
 //        System.out.println("min value of list ->"+dwc);
+
+       int max= Collections.max(list);
+       int min=Collections.min(list);
+
+       System.out.println("the max value of list is "+max);
+       System.out.println("the min value of list is "+min);
 
 
 
