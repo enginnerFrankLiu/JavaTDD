@@ -28,13 +28,38 @@ public class Main {
         t.testNewLambdaWayToCreate();
     }
 
+    /**
+     *
+     */
+    static void TestC(){
+        TestInfo t =new TestInfo();
+        t.Info();
+    }
+
+    /**
+     *
+     */
+    static void TestD(){
+        TestInfo t =new TestInfo();
+        t.InfoA();
+    }
+
+    static void InfoM(){
+        TestInfo t =new TestInfo();
+        t.InfoM();
+    }
+    static void InfoN(){
+        TestInfo t =new TestInfo();
+        t.InfoN();
+    }
 
     public static void main(String [] args){
 
-       // testA();
-
-        TestB();
-
+        //InfoN();
+        InfoM();
+       //TestD();
+       //testA();
+       //TestB();
     }
 
 }
