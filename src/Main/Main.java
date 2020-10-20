@@ -57,6 +57,13 @@ public class Main {
 
     public static void main(String [] args){
 
+        TestInfo t =new TestInfo();
+
+        t.count();
+
+        System.out.println("application end.");
+
+
         //partitionByInfo();
         //InfoN();
         //InfoM();

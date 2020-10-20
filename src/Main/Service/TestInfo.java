@@ -1,8 +1,5 @@
 package Main.Service;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -153,6 +150,53 @@ public class TestInfo {
 
         System.out.println(map);
 
+    }
+
+    public void count(){
+
+        List<Integer> list= Arrays.asList(1,2,3,4,5,6);
+
+        Integer max=list
+                .stream()
+                .collect(Collectors.maxBy(Integer::max))
+                .orElse(0);
+
+        System.out.println("max value of list->"+max);
+
+        Integer min=list
+                .stream()
+                .collect(Collectors.minBy(Integer::min))
+                .orElse(0);
+
+        System.out.println("min value of list ->"+min);
+
+//
+//        Integer dw=list
+//                .stream()
+//                .collect(Collectors.minBy((a,b)->a-b))
+//                .orElse(0);
+//
+//        System.out.println("min value of list ->"+dw);
+//
+//        Integer dwc=list
+//                .stream()
+//                .collect(Collectors.minBy((a,b)->b-a))
+//                .orElse(0);
+//
+//        System.out.println("min value of list ->"+dwc);
+
+
+
+    }
+
+    public void maxInfo(){
+
+        int a=10;
+        int b=20;
+
+       int result= Math.max(a,b);
+
+       System.out.println(result);
     }
 
 }
