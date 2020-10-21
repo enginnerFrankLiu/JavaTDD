@@ -1,6 +1,7 @@
 package Main;
 
 
+import Main.Service.Love;
 import Main.Service.TestInfo;
 /**
  * 用户故事分析
@@ -55,21 +56,27 @@ public class Main {
         t.partitionByInfo();
     }
 
+     public static void run(){
+         Love love=new Love();
+         love.getMaxA();
+         love.getMaxB();
+         love.getMaxC();
+         love.getMaxD();
+         love.getSum();
+     }
+
+     public static void run1(){
+         Love love=new Love();
+         love.printInfo();
+     }
+
     public static void main(String [] args){
 
-        TestInfo t =new TestInfo();
+        System.out.println("application starting....");
 
-        t.count();
+        run1();
 
-        System.out.println("application end.");
-
-
-        //partitionByInfo();
-        //InfoN();
-        //InfoM();
-       //TestD();
-       //testA();
-       //TestB();
+        System.out.println("application ending......");
     }
 
 }

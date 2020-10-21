@@ -195,6 +195,11 @@ public class TestInfo {
 
     }
 
+    /**
+     * 1.下一个目标就是我们的泛型。
+     * 2.还有就是我们的java中的各种异常处理。
+     * 各种api的接口是看不完的，我先熟悉主要的和主流的使用方式，就可以了；
+     */
     public void maxInfo(){
 
         int a=10;
