@@ -1,7 +1,13 @@
 package Main;
 
 
+import Main.Service.Love;
 import Main.Service.TestInfo;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
+import javax.xml.transform.Result;
+import java.util.List;
+
 /**
  * 用户故事分析
  * as a normal person,i want to buy a car
@@ -57,11 +63,10 @@ public class Main {
 
     public static void main(String [] args){
 
-        TestInfo t =new TestInfo();
 
-
-        System.out.println("application end.");
-
+        Love love=new Love();
+//       love.selectMany();
+        love.selectManyA();
 
         //partitionByInfo();
         //InfoN();
