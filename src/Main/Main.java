@@ -59,7 +59,6 @@ public class Main {
 
         TestInfo t =new TestInfo();
 
-        t.testDuplicate();
 
         System.out.println("application end.");
 
