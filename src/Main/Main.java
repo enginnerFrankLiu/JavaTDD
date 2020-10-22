@@ -59,7 +59,7 @@ public class Main {
 
         TestInfo t =new TestInfo();
 
-        t.count();
+        t.testDuplicate();
 
         System.out.println("application end.");
 

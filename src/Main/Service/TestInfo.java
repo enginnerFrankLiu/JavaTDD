@@ -154,7 +154,7 @@ public class TestInfo {
 
     public void count(){
 
-        List<Integer> list= Arrays.asList(1,2,3,4,5,6);
+        List<Integer> list= Arrays.asList(16,15,14,13,12,11);
 
 //        Integer max=list
 //                .stream()
@@ -191,18 +191,91 @@ public class TestInfo {
        System.out.println("the max value of list is "+max);
        System.out.println("the min value of list is "+min);
 
+    }
+    public void maxInfo(){
+        int a=10;
+        int b=20;
+       int result= Math.max(a,b);
+       System.out.println(result);
+    }
+
+    /**
+     * the order of list.
+     */
+    public void mappingInfo() {
+//        List<Integer> list= Arrays.asList(36,25,14,13,92,11);
+//        Integer max = list
+//                .stream()
+//                .collect(Collectors.maxBy(Comparator
+//                        .reverseOrder()))
+//                .orElse(0);
+//
+//        System.out.println(max);
+//
+//        List<Integer> list1= Arrays.asList(16,15,14,13,12,11);
+//
+//        List<Integer> list2= Arrays.asList(11,12,13,14,15,16);
+
+        /**
+         * this seem to no relative to order of list.
+         */
+//        Integer val0=list1
+//                .stream()
+//                .collect(Collectors.maxBy((a,b)->a-b))
+//                .get();
+//
+//        Integer val1=list2
+//                .stream()
+//                .collect(Collectors.maxBy((a,b)->a-b))
+//                .get();
+//
+//        System.out.println(val0);
+//        System.out.println(val1);
+
+        List<String> fruits = Arrays.asList("orange", "pear", "apple", "grapes");
+        Optional<String> minElement = fruits.stream()
+                .collect(Collectors.minBy(Comparator.naturalOrder()));
+        System.out.println(minElement);
+
+    }
+
+    /**
+     *
+     */
+    public void testMinMaxBy(){
+
+        List<Integer> list= Arrays.asList(13,15,14,113,12,11);
+
+        Integer val=list
+                .stream()
+                .collect(Collectors.maxBy(Integer::max))
+                .orElse(-1);
+        System.out.println(val);
+        System.out.println(list);
 
 
     }
 
-    public void maxInfo(){
+    public void testMinMax(){
+//        // Get Min or Max Number
+//        Integer maxNumber = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+//                .max(Comparator.comparing(Integer::valueOf))
+//                .get();
+//
+//        Integer minNumber = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+//                .min(Comparator.comparing(Integer::valueOf))
+//                .get();
+//
+//        System.out.println("maxNumber = " + maxNumber);
+//        System.out.println("minNumber = " + minNumber);
+    }
 
-        int a=10;
-        int b=20;
+    public void testDuplicate(){
 
-       int result= Math.max(a,b);
-
-       System.out.println(result);
+        Set<String> sets=new HashSet<>() ;
+        sets.add("a");
+        sets.add("A");
+        System.out.println(sets);
     }
 
 }
