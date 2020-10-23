@@ -1,0 +1,62 @@
+
+X	java:S106"9Replace this use of System.out or System.err by a logger.(‘ïç›úÿÿÿÿ8ŞÏùÄÔ.
+{
+java:S1171?"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8ŞÏùÄÔ.
+I
+java:S3599W",Use another way to initialize this instance.(ìÄ¢®8ŞÏùÄÔ.
+T	java:S106'"9Replace this use of System.out or System.err by a logger.(Èó¿|8ŞÏùÄÔ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(‡¯±’ùÿÿÿÿ8½™ëÆÔ.
+V	java:S125"<This block of commented-out lines of code should be removed.(ƒÀÜ 8ŞÏùÄÔ.
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8ŞÏùÄÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(ü§ øÿÿÿÿ8İÿÅÔ.
+{
+java:S1171r"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8ŞÏùÄÔ.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ışøë8ŞÏùÄÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(ü§ øÿÿÿÿ8’Ñ¶ÇÔ.
+j	java:S100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®®Ë¹8ŞÏùÄÔ.
+{
+java:S1171,"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8ŞÏùÄÔ.
+{
+java:S1171X"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8ŞÏùÄÔ.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Èó¿|8ŞÏùÄÔ.
+V	java:S125"<This block of commented-out lines of code should be removed.(ƒÀÜ 8ÇÆÛÆÔ.
+U	java:S106g"9Replace this use of System.out or System.err by a logger.(µˆœÑ8ŞÏùÄÔ.
+V	java:S106—"9Replace this use of System.out or System.err by a logger.(µˆœÑ8ŞÏùÄÔ.
+V	java:S125"<This block of commented-out lines of code should be removed.(ƒÀÜ 8ŞÏùÄÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(ş‘»Øùÿÿÿÿ8ŞÏùÄÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(ŒØ¯Şşÿÿÿÿ8ŞÏùÄÔ.
+V	java:S125"<This block of commented-out lines of code should be removed.(ÿÊº†8ŞÏùÄÔ.
+Z	java:S106K"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8ŞÏùÄÔ.
+j	java:S100U"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î‚¤Ê8ŞÏùÄÔ.
+[	java:S106…"9Replace this use of System.out or System.err by a logger.(éĞ«şÿÿÿÿ8ŞÏùÄÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(—£“Øøÿÿÿÿ8İÿÅÔ.
+V	java:S125"<This block of commented-out lines of code should be removed.(ƒÀÜ 8ŞÏùÄÔ.
+U	java:S106~"9Replace this use of System.out or System.err by a logger.(‘Ô¤ñ8ŞÏùÄÔ.
+D
+java:S1604"(Make this anonymous inner class a lambda(ô§ê8ŞÏùÄÔ.
+V	java:S125"<This block of commented-out lines of code should be removed.(ôà–¥8ŞÏùÄÔ.
+V	java:S125"<This block of commented-out lines of code should be removed.(š®»Ş8ÇÆÛÆÔ.
+I
+java:S3599>",Use another way to initialize this instance.(ìÄ¢®8ŞÏùÄÔ.
+I
+java:S3599+",Use another way to initialize this instance.(ìÄ¢®8ŞÏùÄÔ.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Í²ş…
+X	java:S106"9Replace this use of System.out or System.err by a logger.(»¯Ïîüÿÿÿÿ8®ĞÊÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(ü§ øÿÿÿÿ8’Ñ¶ÇÔ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(æ«‰€üÿÿÿÿ8ŞÏùÄÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(ı´ø¤ıÿÿÿÿ8ÇÆÛÆÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(®®ˆÃøÿÿÿÿ8’Ñ¶ÇÔ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8êÄ‰ÅÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(×«åùÿÿÿÿ8ÇÆÛÆÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(•ìâ€üÿÿÿÿ8ÇÆÛÆÔ.
+j	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“úò†8ŞÏùÄÔ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ8½™ëÆÔ.
+[	java:S125"<This block of commented-out lines of code should be removed.(ü§ øÿÿÿÿ8İÿÅÔ.
+[	java:S106†"9Replace this use of System.out or System.err by a logger.(»¯Ïîüÿÿÿÿ8ŞÏùÄÔ.
+j	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ«¢Õ8ŞÏùÄÔ.
+U	java:S106a"9Replace this use of System.out or System.err by a logger.(èÔ à8ŞÏùÄÔ.
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(Í½»šşÿÿÿÿ8ŞÏùÄÔ.
+I
+java:S3599q",Use another way to initialize this instance.(ìÄ¢®8ŞÏùÄÔ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ğ³öˆüÿÿÿÿ8éÂÖÆÔ.
+V	java:S125"<This block of commented-out lines of code should be removed.(ƒÀÜ 8ŞÏùÄÔ.

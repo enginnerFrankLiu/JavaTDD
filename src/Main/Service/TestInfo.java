@@ -154,7 +154,7 @@ public class TestInfo {
 
     public void count(){
 
-        List<Integer> list= Arrays.asList(1,2,3,4,5,6);
+        List<Integer> list= Arrays.asList(16,15,14,13,12,11);
 
 //        Integer max=list
 //                .stream()
@@ -191,8 +191,6 @@ public class TestInfo {
        System.out.println("the max value of list is "+max);
        System.out.println("the min value of list is "+min);
 
-
-
     }
 
     /**
@@ -201,12 +199,9 @@ public class TestInfo {
      * 各种api的接口是看不完的，我先熟悉主要的和主流的使用方式，就可以了；
      */
     public void maxInfo(){
-
         int a=10;
         int b=20;
-
        int result= Math.max(a,b);
-
        System.out.println(result);
     }
 

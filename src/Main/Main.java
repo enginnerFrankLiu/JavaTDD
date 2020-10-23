@@ -4,6 +4,11 @@ package Main;
 import Main.Model.User;
 import Main.Service.Love;
 import Main.Service.TestInfo;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
+import javax.xml.transform.Result;
+import java.util.List;
+
 import com.sun.xml.internal.ws.util.StringUtils;
 
 import java.util.Arrays;
@@ -210,11 +215,21 @@ public class Main {
 
     public static void main(String [] args){
 
+        Love love=new Love();
+//       love.selectMany();
+        love.selectManyA();
+
         System.out.println("application starting....");
 
         getMaxLife();
 
         System.out.println("application ending......");
+        //partitionByInfo();
+        //InfoN();
+        //InfoM();
+       //TestD();
+       //testA();
+       //TestB();
     }
 
 }

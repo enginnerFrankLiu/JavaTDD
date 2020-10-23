@@ -1,0 +1,15 @@
+
+j	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Кйъў8ѓУЫпФ.
+o	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ЊщҐаьяяяя8ѓУЫпФ.
+X	java:S125B"<This block of commented-out lines of code should be removed.(Г®цл8ѓУЫпФ.
+U	java:S106?"9Replace this use of System.out or System.err by a logger.(…±•ы8ѓУЫпФ.
+o	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ц§зъяяяя8ѓУЫпФ.
+j	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ШЃТ8ѓУЫпФ.
+C
+java:S1481<"&Remove this unused "t" local variable.(»зй©8зћЬпФ.
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(тЏЕt8ѓУЫпФ.
+R
+java:S1854<"5Remove this useless assignment to local variable "t".(»зй©8зћЬпФ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ЂЌТюяяяя
+q
+java:S4144"UUpdate this method so that its implementation is not identical to "testA" on line 19.(тЏЕt8ѓУЫпФ.
