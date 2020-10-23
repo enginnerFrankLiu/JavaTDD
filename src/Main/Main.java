@@ -1,8 +1,17 @@
 package Main;
 
 
+import Main.Model.User;
 import Main.Service.Love;
 import Main.Service.TestInfo;
+import com.sun.xml.internal.ws.util.StringUtils;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 /**
  * 用户故事分析
  * as a normal person,i want to buy a car
@@ -70,11 +79,140 @@ public class Main {
          love.printInfo();
      }
 
+     public static void fuckTheLife(){
+         System.out.println("Fuck The Life. ");
+     }
+
+     public static void reduceInfo(){
+         List<Integer> list= Arrays.asList(1,1,1,1,1);
+        Integer sum= list.stream()
+                 .collect(Collectors.reducing(100,(i,j)->i+j));
+
+        System.out.println(sum);
+     }
+
+    /**
+     * when list including some null value.
+     * in case of nullPointer exception.
+     * we should determine whether the value is empty.
+     */
+    public static void mapInfo(){
+
+        List<String> list=Arrays.asList("a","b",null,"c","d");
+        List<String> upperList=list
+                .stream()
+                .map(x->{
+                    if(x==null){
+                        return "";
+                    }else{
+                      return x.toUpperCase();
+                    }
+                })
+                .collect(Collectors.toList());
+
+        System.out.println(upperList);
+     }
+
+    /**
+     * the right way to use tool/method,but original data is wrong.
+     * this is very bad thing.
+     */
+    public static void changeLife(){
+
+         List<String> listOfString=Arrays.asList("a","bbb","c","d");
+
+         String maxLengthString=listOfString
+                 .stream()
+                 .collect(Collectors.maxBy(Comparator.comparingInt(String::length)))
+                  .orElse("");
+
+
+         System.out.println(maxLengthString);
+
+         List<Integer> listOfInt=Arrays.asList(1,1,8,1,1,100);
+
+         Integer max=listOfInt
+                 .stream()
+                 .collect(Collectors.maxBy(Integer::compare))
+                 .orElse(0);
+
+         System.out.println(max);
+
+         Integer maxVal= listOfInt
+                 .stream()
+                 .collect(Collectors.maxBy(Comparator.comparingInt(Integer::intValue)))
+                 .orElse(0);
+
+         System.out.println(maxVal);
+
+         Integer number=100;
+         System.out.println(number.intValue());
+         System.out.println("there still fucking stupid way to do this.");
+
+        long count= listOfInt.stream().count();
+        long size=listOfInt.size();
+        long countV2=listOfInt
+                .stream()
+                .collect(Collectors.counting());
+
+        System.out.println("fuck the way....");
+        System.out.println(count);
+        System.out.println(size);
+        System.out.println(countV2);
+
+        System.out.println("fuck the way....");
+
+        List<User> users=Arrays.asList(
+                new User(1,"jack",18),
+                new User(1,"tom",18),
+                new User(1,"frank",28)
+        );
+
+         System.out.println("-----------------------------------------------------");
+         User  maxAgeUser=users
+                .stream()
+                .collect(Collectors.maxBy(Comparator.comparingInt(User::getAge)))
+                .orElse(new User(-1,"unkonw_User",-1));
+       System.out.println(maxAgeUser.getName());
+       System.out.println(maxAgeUser.getAge());
+
+     }
+
+    public static void getMaxLife(){
+
+         List<User> users=Arrays.asList(
+                 new User(1,"jack",18),
+                 new User(1,"tom",18),
+                 new User(1,"frank",28)
+         );
+
+         int maxVal=getMax(users);
+         System.out.println(maxVal);
+     }
+
+    /**
+     * 1.order by desc -> first element.
+     * 2.for loop look up
+     * @param list
+     * @return
+     */
+     public static Integer getMax(List<User> list){
+         Integer temp=list.get(0).getAge();
+         for (int index=1;index<list.size();index++){
+             Integer next=list.get(index).getAge();
+             if(next>temp){
+                 temp=next;
+             }
+         }
+         return temp;
+     }
+
+
     public static void main(String [] args){
 
         System.out.println("application starting....");
 
-        run1();
+        getMaxLife();
 
         System.out.println("application ending......");
     }
