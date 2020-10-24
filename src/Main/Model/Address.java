@@ -4,19 +4,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Address {
 
     private int id;
 
-    private String name;
+    private String province;
 
-    private int age;
+    private String city;
 
-    private Address address;
+    private String street;
+
+    private String remark;
+
 }

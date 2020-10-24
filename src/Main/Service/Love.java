@@ -1,11 +1,10 @@
 package Main.Service;
 
+import Main.Model.Address;
 import Main.Model.Node;
+import Main.Model.User;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Love {
@@ -139,4 +138,90 @@ public class Love {
         System.out.println(allNames);
     }
 
+    public User getUserById(int userId){
+        if(userId>0){
+
+            return new User(userId,"marsh",18,new Address(1,"SiChuan","ChengDu","Five Street","company address"));
+        }else{
+
+            return null;
+        }
+    }
+
+    /**
+     *
+     * @param userId
+     * @return
+     */
+    public String getUserAddress(int userId){
+        User user=getUserById(userId);
+        if(user==null){
+            return "";
+        }
+        if(user.getAddress()==null){
+            return "";
+        }
+        Address address=user.getAddress();
+        String detailAddress=address.getProvince()+"_"+address.getCity()+"_"+address.getStreet();
+        return detailAddress;
+    }
+
+
+    /**
+     *
+     * @param userId
+     * @return
+     */
+    public String getUserAddressV2(int userId){
+        User user=getUserById(userId);
+        String detailAddress="";
+      if(user!=null){
+          if(user.getAddress()!=null){
+              Address address=user.getAddress();
+               detailAddress=address.getProvince()+"_"+address.getCity()+"_"+address.getStreet();
+          }
+
+      }
+        return detailAddress;
+    }
+
+    /**
+     * how to use optional optimize this code
+     * this is how optional optimize code.
+     * @param userId
+     * @return
+     */
+    public String getUserAddressV3(int userId) {
+        User userInfo=Optional
+                .ofNullable(getUserById(userId))
+                .orElse(new User(-1,"unKnow",18,null));
+
+        Address addressInfo=Optional
+                .ofNullable(userInfo.getAddress())
+                .orElse(new Address(-1,"","","",""));
+
+        String detailAddress=addressInfo.getProvince()+"_"+addressInfo.getCity()+"_"+addressInfo.getStreet();
+        return detailAddress;
+    }
+
+    /**
+     * how to use optional optimize this code
+     * this is how optional optimize code.
+     * or
+     * you can throw exceptions directly.
+     * @param userId
+     * @return
+     */
+    public String getUserAddressV4 (int userId) throws  Exception {
+        User userInfo=Optional
+                .ofNullable(getUserById(userId))
+                .orElseThrow(() -> new  Exception("user didn't existed in our system,please check it."));
+
+        Address addressInfo=Optional
+                .ofNullable(userInfo.getAddress())
+                .orElseThrow(() -> new  Exception("user didn't config address,please check it."));
+
+        String detailAddress=addressInfo.getProvince()+"_"+addressInfo.getCity()+"_"+addressInfo.getStreet();
+        return detailAddress;
+    }
 }

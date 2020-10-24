@@ -161,16 +161,16 @@ public class Main {
         System.out.println("fuck the way....");
 
         List<User> users=Arrays.asList(
-                new User(1,"jack",18),
-                new User(1,"tom",18),
-                new User(1,"frank",28)
+                new User(1,"jack",18,null),
+                new User(1,"tom",18,null),
+                new User(1,"frank",28,null)
         );
 
          System.out.println("-----------------------------------------------------");
          User  maxAgeUser=users
                 .stream()
                 .collect(Collectors.maxBy(Comparator.comparingInt(User::getAge)))
-                .orElse(new User(-1,"unkonw_User",-1));
+                .orElse(new User(-1,"unkonw_User",-1,null));
        System.out.println(maxAgeUser.getName());
        System.out.println(maxAgeUser.getAge());
 
@@ -179,9 +179,9 @@ public class Main {
     public static void getMaxLife(){
 
          List<User> users=Arrays.asList(
-                 new User(1,"jack",18),
-                 new User(1,"tom",18),
-                 new User(1,"frank",28)
+                 new User(1,"jack",18,null),
+                 new User(1,"tom",18,null),
+                 new User(1,"frank",28,null)
          );
 
          int maxVal=getMax(users);
@@ -205,24 +205,26 @@ public class Main {
          return temp;
      }
 
-
+    /**
+     *
+     * @param args
+     */
     public static void main(String [] args){
 
         Love love=new Love();
-//       love.selectMany();
-        love.selectManyA();
+        int userId=100;
+        System.out.println(love.getUserAddress(userId));
+        System.out.println(love.getUserAddressV2(userId));
+        System.out.println(love.getUserAddressV3(userId));
 
-        System.out.println("application starting....");
+        System.out.println("when no right user existed in bd according user id ");
+        userId=-999;
 
-        getMaxLife();
+        System.out.println(love.getUserAddress(userId));
+        System.out.println(love.getUserAddressV2(userId));
+        System.out.println(love.getUserAddressV3(userId));
 
-        System.out.println("application ending......");
-        //partitionByInfo();
-        //InfoN();
-        //InfoM();
-       //TestD();
-       //testA();
-       //TestB();
+
     }
 
 }
