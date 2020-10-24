@@ -3,7 +3,9 @@ package Main.Service;
 import Main.Model.Address;
 import Main.Model.Node;
 import Main.Model.User;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
+import javax.print.DocFlavor;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -224,4 +226,69 @@ public class Love {
         String detailAddress=addressInfo.getProvince()+"_"+addressInfo.getCity()+"_"+addressInfo.getStreet();
         return detailAddress;
     }
+
+    /**
+     *
+     */
+    public void compareTwoOptional(){
+
+        Optional<String> A=Optional.of("A");
+        Optional<String> aCopy=Optional.of("A");
+        if(aCopy==A){
+            System.out.println("true");
+        }else{
+            System.out.println("false");
+        }
+    }
+
+    /**
+     * isPresent
+     * ifPresent
+     * how to use this.
+     */
+    public void ms() {
+        Optional empty = Optional.empty();
+
+        Optional<String> name = Optional.of("name");
+
+        Optional<String> nullName = Optional.ofNullable(null);
+
+        empty.ifPresent(x->System.out.println("out"));
+
+        name.ifPresent(x->System.out.println("out"));
+
+        nullName.ifPresent(x->System.out.println("out"));
+
+
+    }
+
+    /**
+     *
+     * @param userId
+     */
+    public Optional<Integer> tryParseInt(String userId){
+        try{
+            return Optional.of(Integer.parseInt(userId));
+        }catch (Exception ex){
+           return Optional.empty();
+        }
+    }
+
+    /**
+     * that is feel so good.
+     */
+    public void testTryParseInt(){
+
+        Optional<Integer> userId=tryParseInt("11");
+
+        userId.ifPresent(x->System.out.println(x));
+
+        Optional<Integer> userId_cannotParse=tryParseInt("aa");
+
+        userId_cannotParse.ifPresent(x->System.out.println(x));
+
+//        OptionalUtility.stringToInt();
+
+    }
+
 }

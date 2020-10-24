@@ -2,6 +2,7 @@ package Main;
 
 
 import Main.Model.User;
+import Main.Service.Console;
 import Main.Service.Love;
 import Main.Service.TestInfo;
 import java.util.List;
@@ -205,25 +206,42 @@ public class Main {
          return temp;
      }
 
+     public void testInfoBB(){
+
+         Love love=new Love();
+         int userId=100;
+         System.out.println(love.getUserAddress(userId));
+         System.out.println(love.getUserAddressV2(userId));
+         System.out.println(love.getUserAddressV3(userId));
+
+         System.out.println("when no right user existed in bd according user id ");
+         userId=-999;
+
+         System.out.println(love.getUserAddress(userId));
+         System.out.println(love.getUserAddressV2(userId));
+         System.out.println(love.getUserAddressV3(userId));
+
+     }
+
+     static void tempA(){
+
+         Love love=new Love();
+//        love.compareTwoOptional();
+//        System.out.println("over");
+
+         // love.ms();
+         love.testTryParseInt();
+     }
+
+
     /**
      *
      * @param args
      */
     public static void main(String [] args){
 
-        Love love=new Love();
-        int userId=100;
-        System.out.println(love.getUserAddress(userId));
-        System.out.println(love.getUserAddressV2(userId));
-        System.out.println(love.getUserAddressV3(userId));
-
-        System.out.println("when no right user existed in bd according user id ");
-        userId=-999;
-
-        System.out.println(love.getUserAddress(userId));
-        System.out.println(love.getUserAddressV2(userId));
-        System.out.println(love.getUserAddressV3(userId));
-
+        Console console=new Console();
+        console.testA();
 
     }
 
