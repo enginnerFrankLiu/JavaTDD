@@ -236,12 +236,37 @@ public class Main {
 
     /**
      *
+     * 1.
+     *
+     * when interface a and b have same default method;
+     *
+     * class c want to implement a and b at same time,
+     *
+     * you should overwrite super class default method
+     *
+     * otherwise it will warning there is conflict;
+     *
+     * interface b extend interface a which have same default method with b;
+     * class c implement c;
+       when the instance of c call that method. it will call the least one class's default method.
+     *
+     *here is some rule about it;
+     *
+     * 1.the class method have top priority.
+     * 2.the sub class have higher priority that super class.
+     * 3.overwrite method have have priority that interface default method.
+     *
+     *
      * @param args
      */
     public static void main(String [] args){
 
         Console console=new Console();
-        console.testA();
+       // console.testA();
+       // console.testC();
+       // console.convertInfo();
+      //  console.toSet();
+        console.testGeneric();
 
     }
 
