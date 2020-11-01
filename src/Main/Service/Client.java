@@ -4,6 +4,8 @@ import Main.Implement.Apple;
 import Main.Implement.Fruit;
 import Main.Implement.GreenApple;
 import Main.Model.Node;
+import Main.Model.Parent;
+import Main.Model.Son;
 import org.mockito.internal.matchers.Null;
 
 import java.util.*;
@@ -153,6 +155,40 @@ public class Client {
 
         System.out.println(map);
 
+    }
+
+    //we all compare the value of type.
+    public void testEquals(){
+
+        int a=12;
+        Integer A=new Integer(12);
+        System.out.println(a==A);
+        System.out.println(A.equals(a));
+
+    }
+
+    public void instanceOf(){
+
+        Parent p=new Parent();
+        Son s=new Son();
+
+        System.out.println(p instanceof Parent);
+        System.out.println(s instanceof Parent);
+        System.out.println("get class -----------------");
+        System.out.println(p.getClass()==Parent.class);
+        //System.out.println(s.getClass()==Parent.class);
+        //这段代码直接编译都无法通过;
+
+
+
+    }
+
+    public void testEquals_InstanceOf(){
+        Parent p=new Parent(1,"jack");
+        Son s=new Son(1,"jack",897);
+        System.out.println(p.equals(s));
+        //son will have them self new define of equal.
+        System.out.println(s.equals(p));
     }
 
 

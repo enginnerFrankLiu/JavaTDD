@@ -268,9 +268,12 @@ public class Main {
 //       // console.convertInfo();
 //      //  console.toSet();
 //        console.testGeneric();
-
+//
         Client client=new Client();
-        client.LoveCode();
+       // client.LoveCode();
+       // client.testEquals();
+       // client.instanceOf();
+        client.testEquals_InstanceOf();
 
 
     }
