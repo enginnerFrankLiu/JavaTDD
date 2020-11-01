@@ -3,9 +3,10 @@ package Main.Service;
 import Main.Implement.Apple;
 import Main.Implement.Fruit;
 import Main.Implement.GreenApple;
+import Main.Model.Node;
+import org.mockito.internal.matchers.Null;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Client {
 
@@ -131,6 +132,26 @@ public class Client {
         objs[0]="love";
         objs[1]=100;
         objs[2]=new Apple();
+
+    }
+
+    public void LoveCode(){
+
+        Node nodeX=new Node(1,"A", new ArrayList<>());
+
+        Node nodeY=new Node(1,"A",new ArrayList<>());
+
+        boolean result=nodeX.equals(nodeY);
+
+        System.out.println(result);
+
+        System.out.println("put node into map.");
+
+        Map<Node,String > map=new HashMap<>();
+        map.put(nodeX,"0");
+        map.put(nodeY,"1");
+
+        System.out.println(map);
 
     }
 

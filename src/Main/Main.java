@@ -1,14 +1,15 @@
 package Main;
 
 
+import Main.Model.Node;
 import Main.Model.User;
+import Main.Service.Client;
 import Main.Service.Console;
 import Main.Service.Love;
 import Main.Service.TestInfo;
-import java.util.List;
 
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.*;
+
 import java.util.stream.Collectors;
 
 /**
@@ -260,13 +261,17 @@ public class Main {
      * @param args
      */
     public static void main(String [] args){
+//
+//        Console console=new Console();
+//       // console.testA();
+//       // console.testC();
+//       // console.convertInfo();
+//      //  console.toSet();
+//        console.testGeneric();
 
-        Console console=new Console();
-       // console.testA();
-       // console.testC();
-       // console.convertInfo();
-      //  console.toSet();
-        console.testGeneric();
+        Client client=new Client();
+        client.LoveCode();
+
 
     }
 
