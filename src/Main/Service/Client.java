@@ -3,12 +3,11 @@ package Main.Service;
 import Main.Implement.Apple;
 import Main.Implement.Fruit;
 import Main.Implement.GreenApple;
-import Main.Model.Node;
-import Main.Model.Parent;
-import Main.Model.Son;
+import Main.Model.*;
 import org.mockito.internal.matchers.Null;
 
 import java.util.*;
+import java.util.stream.StreamSupport;
 
 public class Client {
 
@@ -189,6 +188,37 @@ public class Client {
         System.out.println(p.equals(s));
         //son will have them self new define of equal.
         System.out.println(s.equals(p));
+    }
+
+    /**
+     * it is relative with hashcode and equals value to determmize the order.
+     */
+    public void test_Set(){
+
+        Set<String> sets=new HashSet<>();
+        for (Integer i=0; i<10;i++){
+
+            for (Integer j=0; j<10;j++) {
+                sets.add(j.toString());
+            }
+        }
+
+        for (String set : sets) {
+
+            System.out.println(set);
+        }
+    };
+
+    // no duplicate element in hashset collection.
+    public void test_Add_Set(){
+
+        Collection hs=new HashSet();
+        hs.add(new AModel());
+        hs.add(new AModel());
+        hs.add(new BModel());
+        hs.add(new BModel());
+
+        System.out.println(hs);
     }
 
 

@@ -273,7 +273,10 @@ public class Main {
        // client.LoveCode();
        // client.testEquals();
        // client.instanceOf();
-        client.testEquals_InstanceOf();
+       // client.testEquals_InstanceOf();
+       // client.test_Set();
+        client.test_Add_Set();
+
 
 
     }
